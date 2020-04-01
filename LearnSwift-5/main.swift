@@ -10,7 +10,9 @@ import Foundation
 
 print("Hello, World!")
 
-baseContent()
+//baseContent()
+
+basicOperators()
 
 
 

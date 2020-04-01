@@ -501,6 +501,76 @@ func baseContent() -> Void {
     }
     
     //do 语句创建了一个新的容器范围，可以让错误被传递到到不止一个的 catch 分句里。
+    //例如：
+//    do {
+//        try makeASandwich()
+//    } catch Error.OutOfCleanDishes {
+//        washDishes()
+//    } catchError.MissingIngredients(let ingredients) {
+//        buyGroceries(ingredients)
+//    }
+    
+    
+    
+    
+    
+    //断言和先决条件
+    /**
+     断言和先决条件用来检测运行时发生的事情。你可以使用它们来保证在执行后续代码前某必要条件是满足的。如果布尔条件在断言或先决条件中计算为 true ，代码就正常继续执行。如果条件计算为 false ，那么程序当前的状态就是非法的；代码执行结束，然后你的 app 终止。
+
+     你可以使用断言和先决条件来验证那些你在写代码时候的期望和假定，所以你可以包含它们作为你代码的一部分。断言能够帮助你在开发的过程中找到错误和不正确的假定，先决条件帮助你探测产品的问题。在运行时帮助你额外验证你的期望，断言和先决条件同样是代码中好用的证明形式。不同于在上文错误处理中讨论的，断言和先决条件并不用于可回复或者期望的错误。由于错误断言或先决条件显示非法的程序状态，所以没办法来抓取错误断言。
+
+     使用断言和先决条件不能代替你代码中小概率非法情况的处理设计。总之，使用他们来强制数据和状态正确会让你的 app 在有非法状态时终止的更可预料，并帮助你更好的 debug。在检测到异常状态时尽可能快地停止执行同样能够帮助你减小由于异常状态造成的损失。
+
+     断言和先决条件的不同之处在于他们什么时候做检查：断言只在 debug 构建的时候检查，但先决条件则在 debug 和生产构建中生效。在生产构建中，断言中的条件不会被计算。这就是说你可以在开发的过程当中随便使用断言而无需担心影响生产性能。
+     */
+    
+    //使用断言进行调试
+    /**
+     断言会在运行的时候检查一个逻辑条件是否为 true 。
+     顾名思义，断言可以“断言”一个条件是否为真。你可以使用断言确保在运行其他代码之前必要的条件已经被满足。
+     如果条件判断为 true，代码运行会继续进行；如果条件判断为 false，代码运行结束，你的应用也就中止了。
+
+     如果你的代码在调试环境下触发了一个断言，例如你在 Xcode 中创建并运行一个应用，
+     你可以明确的知道不可用的状态发生在什么地方，还能检查断言被触发时你的应用的状态。
+     另外，断言还允许你附加一条调试的信息。
+     */
+    
+    //使用全局函数 assert(_:_:)  函数来写断言
+    let height = -3
+    assert(height > 0, "A person's age cannot be less than zero ")
+    assert(height >= 0)
+    
+    //如果代码已经检查了条件，你可以使用 assertionFailure(_:file:line:) 函数来标明断言失败，比如：
+    if age > 10 {
+        print("You can ride the roller-coaster or the ferris wheel.")
+    } else if age > 0 {
+        print("You can ride the ferris wheel.")
+    } else {
+        assertionFailure("A person's age can't be less than zero.")
+    }
+    
+    
+    /**
+     强制先决条件
+     在你代码中任何条件可能潜在为假但必须肯定为真才能继续执行的地方使用先决条件。比如说，使用先决条件来检测下标没有越界，或者检测函数是否收到了一个合法的值。
+
+     你可以通过调用 precondition(_:_:file:line:) 函数来写先决条件。给这个函数传入表达式计算为 true 或 false ，如果条件的结果是 false 信息就会显示出来。比如说：
+     */
+    let index = 0
+    precondition(index > 0, "Index must be greater than zero.")
+    
+    /**
+     你可以调用 preconditionFailure(_:file:line:) 函数来标明错误发生了——比如说，如果 switch 的默认情况被选中，但所有的合法输入数据应该被其他 switch 的情况处理。
+     
+     注意
+
+     如果你在不检查模式编译（ -Ounchecked ），先决条件不会检查。编译器假定先决条件永远为真，并且它根据你的代码进行优化。总之， fatalError(_:file:line:) 函数一定会终止执行，无论你优化设定如何。
+
+     你可以在草拟和早期开发过程中使用 fatalError(_:file:line:) 函数标记那些还没实现的功能，通过使用 fatalError("Unimplemented") 来作为代替。由于致命错误永远不会被优化，不同于断言和先决条件，你可以确定执行遇到这些临时占位永远会停止。
+     */
+    
+    fatalError("Unimplemented")
     
     
     
