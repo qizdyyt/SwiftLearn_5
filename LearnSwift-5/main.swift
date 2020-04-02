@@ -12,7 +12,9 @@ print("Hello, World!")
 
 //baseContent()
 
-basicOperators()
+//basicOperators()
+
+stringsAndCharacters()
 
 
 
