@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E86DE59240CED2000E13BCC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86DE58240CED2000E13BCC /* main.swift */; };
 		2E86DE64240CEECE00E13BCC /* Learn1BaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86DE63240CEECE00E13BCC /* Learn1BaseContent.swift */; };
+		2EA7EBBF2435C10C00ECCDD7 /* Learn4CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */; };
 		2EB03A28243407EE00093D04 /* Learn2BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB03A27243407EE00093D04 /* Learn2BasicOperators.swift */; };
 		2EB03A2D24345B4C00093D04 /* Learn3StringAndCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB03A2C24345B4C00093D04 /* Learn3StringAndCharacter.swift */; };
 /* End PBXBuildFile section */
@@ -29,8 +30,11 @@
 		2E86DE55240CED2000E13BCC /* LearnSwift-5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LearnSwift-5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86DE58240CED2000E13BCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2E86DE63240CEECE00E13BCC /* Learn1BaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn1BaseContent.swift; sourceTree = "<group>"; };
+		2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn4CollectionType.swift; sourceTree = "<group>"; };
 		2EB03A27243407EE00093D04 /* Learn2BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn2BasicOperators.swift; sourceTree = "<group>"; };
 		2EB03A2C24345B4C00093D04 /* Learn3StringAndCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn3StringAndCharacter.swift; sourceTree = "<group>"; };
+		2EB1A7CF2436DDEF000E7883 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		2EB1A7D12436DF43000E7883 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,19 @@
 				2E86DE63240CEECE00E13BCC /* Learn1BaseContent.swift */,
 				2EB03A27243407EE00093D04 /* Learn2BasicOperators.swift */,
 				2EB03A2C24345B4C00093D04 /* Learn3StringAndCharacter.swift */,
+				2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */,
+				2EB1A7D02436DDFA000E7883 /* Assets */,
 			);
 			path = "LearnSwift-5";
+			sourceTree = "<group>";
+		};
+		2EB1A7D02436DDFA000E7883 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1A7CF2436DDEF000E7883 /* 1.png */,
+				2EB1A7D12436DF43000E7883 /* 2.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA7EBBF2435C10C00ECCDD7 /* Learn4CollectionType.swift in Sources */,
 				2EB03A28243407EE00093D04 /* Learn2BasicOperators.swift in Sources */,
 				2EB03A2D24345B4C00093D04 /* Learn3StringAndCharacter.swift in Sources */,
 				2E86DE59240CED2000E13BCC /* main.swift in Sources */,

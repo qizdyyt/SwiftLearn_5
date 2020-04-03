@@ -14,7 +14,9 @@ print("Hello, World!")
 
 //basicOperators()
 
-stringsAndCharacters()
+//stringsAndCharacters()
+
+collectionType()
 
 
 
