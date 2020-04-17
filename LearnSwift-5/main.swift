@@ -18,7 +18,9 @@ print("Hello, World!")
 
 //collectionType()
 
-controlflowstatements()
+//controlflowstatements()
+
+useFunctions()
 
 
 
