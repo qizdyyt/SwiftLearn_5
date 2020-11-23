@@ -20,7 +20,9 @@ print("Hello, World!")
 
 //controlflowstatements()
 
-useFunctions()
+//useFunctions()
+
+useClosures()
 
 
 

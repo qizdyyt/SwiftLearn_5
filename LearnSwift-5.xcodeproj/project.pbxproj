@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E86DE59240CED2000E13BCC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86DE58240CED2000E13BCC /* main.swift */; };
 		2E86DE64240CEECE00E13BCC /* Learn1BaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86DE63240CEECE00E13BCC /* Learn1BaseContent.swift */; };
+		2E97633D24494E32000B163E /* Learn7Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97633C24494E32000B163E /* Learn7Closures.swift */; };
 		2E9C19DC243B0CC200054781 /* Learn6Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C19DB243B0CC200054781 /* Learn6Functions.swift */; };
 		2EA7EBBF2435C10C00ECCDD7 /* Learn4CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */; };
 		2EB03A28243407EE00093D04 /* Learn2BasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB03A27243407EE00093D04 /* Learn2BasicOperators.swift */; };
@@ -32,6 +33,7 @@
 		2E86DE55240CED2000E13BCC /* LearnSwift-5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LearnSwift-5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E86DE58240CED2000E13BCC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2E86DE63240CEECE00E13BCC /* Learn1BaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn1BaseContent.swift; sourceTree = "<group>"; };
+		2E97633C24494E32000B163E /* Learn7Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn7Closures.swift; sourceTree = "<group>"; };
 		2E9C19DB243B0CC200054781 /* Learn6Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn6Functions.swift; sourceTree = "<group>"; };
 		2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn4CollectionType.swift; sourceTree = "<group>"; };
 		2EB03A27243407EE00093D04 /* Learn2BasicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn2BasicOperators.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				2EA7EBBE2435C10C00ECCDD7 /* Learn4CollectionType.swift */,
 				2EB1A7D22436EB94000E7883 /* Learn5ControlFlowStatements.swift */,
 				2E9C19DB243B0CC200054781 /* Learn6Functions.swift */,
+				2E97633C24494E32000B163E /* Learn7Closures.swift */,
 				2EB1A7D02436DDFA000E7883 /* Assets */,
 			);
 			path = "LearnSwift-5";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E97633D24494E32000B163E /* Learn7Closures.swift in Sources */,
 				2EA7EBBF2435C10C00ECCDD7 /* Learn4CollectionType.swift in Sources */,
 				2EB03A28243407EE00093D04 /* Learn2BasicOperators.swift in Sources */,
 				2EB03A2D24345B4C00093D04 /* Learn3StringAndCharacter.swift in Sources */,
@@ -279,9 +283,11 @@
 		2E86DE5D240CED2000E13BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7QX9LL49R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zidong.learnswf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -293,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7QX9LL49R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zidong.learnswf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
